@@ -26,4 +26,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)valueChanged:(id)sender {
+    if (_segment.selectedSegmentIndex==0) {
+        _label.text=@"Segment 1 Seçildi";
+        _label.frame=CGRectMake(25, 160, _label.frame.size.width, _label.frame.size.height);
+    }
+    else if (_segment.selectedSegmentIndex==1) {
+        _label.text=@"Segment 2 Seçildi";
+        _label.frame=CGRectMake(25, 200, _label.frame.size.width, _label.frame.size.height);
+
+    }
+    else if (_segment.selectedSegmentIndex==2) {
+        _label.text=@"Segment 3 Seçildi";
+        _label.frame=CGRectMake(25, 240, _label.frame.size.width, _label.frame.size.height);
+
+    }
+    
+}
 @end
